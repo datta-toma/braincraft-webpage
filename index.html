@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webpage</title>
+     <!-- tailwind and dasiy ui cdn -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.tailwindcss.com"></script>
+     <!-- google font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;800&display=swap" rel="stylesheet">
+      <!-- icons -->
+    <script src="https://kit.fontawesome.com/8f11c76ddb.js" crossorigin="anonymous"></script>
+    <!-- tailwind custom classes -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+
+<style>
+    .font-Manrope{
+        font-family: 'Manrope', sans-serif;
+    }
+   
+</style>
+</head>
+<body class="font-Manrope">
+    <header  class="md:container md:mx-auto">
+        <nav>
+             <div class="navbar mt-5  bg-gradient-to-r from-violet-300 via-purple-300 to-purple-900">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                        </div>
+                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 font-bold ">
+                          <li><a>HOME</a></li>
+                          <li><a>PRODUCTS</a></li>
+                          <li><a>FEATURED</a></li>
+                          <li><a>ABOUT US</a></li>
+                          <li><a>TEAM</a></li>
+                          <li><a>CONTACT</a></li>
+                          <li><a>CAREER</a></li>
+                        </ul>
+                      </div>
+                      <a class="btn btn-ghost text-5xl font-extrabold ">Braincraft</a>
+                    </div>
+                    <div class="navbar-center hidden lg:flex font-bold ">
+                      <ul class="menu menu-horizontal px-1">
+                        <li><a>HOME</a></li>
+                          <li><a>PRODUCTS</a></li>
+                          <li><a>FEATURED</a></li>
+                          <li><a>ABOUT US</a></li>
+                          <li><a>TEAM</a></li>
+                          <li><a>CONTACT</a></li>
+                          <li><a>CAREER</a></li>
+                      </ul>
+                      
+                    </div>
+                  </div>
+        </nav>
+        <!-- slider or carousel -->
+        <div class="carousel w-full lg:h[550px] bg-gradient-to-r from-indigo-500 via-purple-500 to-violet-400 '">
+            <!-- slide 1 -->
+            <div id="slide1" class="carousel-item relative w-full">
+              <div class="flex flex-col lg:flex-row gap-20 p-4 lg:p-24">
+                <div class="space-y-7 flex-1">
+                    <img class="w-28" src="./images/icon-2.png" alt="">
+                    <h2 class="text-2xl lg:text-6xl font-bold">
+                        No Crop-Video &<br>Pictures Fit</h2>
+                        <p>Amet minim mollit non deserunt ullamco 
+                            est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                            <img class="w-28" src="./images/icon-1.png" alt="">
+                </div>
+
+                <div class="flex-1">
+                    <img src="./images/img-1.png" class="w-[400px]" />
+                </div>
+              </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <!-- slide 2 -->
+            <div id="slide2" class="carousel-item relative w-full">
+                <div class="flex flex-col lg:flex-row gap-20 p-4 lg:p-24">
+                    <div class="space-y-7 flex-1">
+                        <img class="w-28" src="./images/icon-4.png" alt="">
+                        <h2 class="text-2xl lg:text-6xl font-bold">
+                            Add Music To Video<br>Voice Over</h2>
+                            <p>Amet minim mollit non deserunt ullamco 
+                                est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                                <img class="w-28" src="./images/icon-1.png" alt="">
+                    </div>
+    
+                    <div class="flex-1">
+                        <img src="./images/img-2.png" class="w-[400px]" />
+                    </div>
+                  </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <!-- slide 3 -->
+            <div id="slide3" class="carousel-item relative w-full">
+                <div class="flex flex-col lg:flex-row gap-20 p-4 lg:p-24">
+                    <div class="space-y-7 flex-1">
+                        <img class="w-28" src="./images/icon-5.png" alt="">
+                        <h2 class="text-2xl lg:text-6xl font-bold">
+                            Slide Show Maker<br> With Music FX</h2>
+                            <p>Amet minim mollit non deserunt ullamco 
+                                est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                                <img class="w-28" src="./images/icon-1.png" alt="">
+                    </div>
+    
+                    <div class="flex-1">
+                        <img src="./images/img-3.png" class="w-[400px]" />
+                    </div>
+                  </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <!-- slide 4 -->
+            <div id="slide4" class="carousel-item relative w-full">
+                <div class="flex flex-col lg:flex-row gap-20 p-4 lg:p-24">
+                    <div class="space-y-7 flex-1">
+                        <img class="w-28" src="./images/icon-3.jpg" alt="">
+                        <h2 class="text-2xl lg:text-6xl font-bold">
+                            GIF Maker-Make<br>Video To GIFS </h2>
+                            <p>Amet minim mollit non deserunt ullamco 
+                                est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                                <img class="w-28" src="./images/icon-1.png" alt="">
+                    </div>
+    
+                    <div class="flex-1">
+                        <img src="./images/img-4.png" class="w-[400px]" />
+                    </div>
+                  </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+    </header>
+
+    <main></main>
+
+    <footer></footer>
+    
+</body>
+</html>
